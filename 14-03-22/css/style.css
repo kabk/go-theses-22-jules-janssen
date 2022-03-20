@@ -1,0 +1,224 @@
+html{
+    min-height:100%;
+    position:relative;
+}
+
+body{
+    margin: 0;
+}
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Pimpit-trial-variable.ttf);
+
+}
+
+@font-face {
+  font-family: myFirstFont2;
+  src: url(Fraunces144ptSuperSoft-Regular.otf);
+}
+
+@font-face {
+  font-family: myFirstFont3;
+  src: url(Souvenir-Medium.otf);
+}
+
+sup {
+  font-size: 9pt;
+}
+
+h {
+font-family: myFirstFont;
+color: white;
+font-style: medium;
+font-size: 220pt;
+line-height: 0.9;
+letter-spacing: -5px;
+}
+
+p {
+margin-top:-5px;
+font-family: myFirstFont2;
+font-weight: 500;
+font-style: normal;
+font-size: 12pt;
+line-height: 1.15;
+}
+
+@media screen and (min-width: 320px) {
+  p {
+    font-size: calc(12pt + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  p {
+    font-size: 20pt;
+  }
+}
+
+h2 {
+margin-top:-5px;
+font-family: myFirstFont2;
+font-weight: 500;
+font-style: normal;
+font-size: 9pt;
+line-height: 1.25;
+}
+
+h3 {
+  margin-top:-11px;
+font-family: myFirstFont3;
+font-weight: 500;
+font-style: normal;
+font-size: 20pt;
+line-height: 1.15;
+}
+}
+
+
+
+
+/*#container {
+  width: 100%;
+  float: left;
+  display:inline-flex;
+  flex-wrap:wrap;
+}
+*/
+
+#container {
+  width: 100%;
+  float: left;
+  display:inline-flex;
+  flex-direction: column;
+}
+
+
+.paragraph{
+position: relative;
+height: 100vh;
+}
+
+
+
+#a{
+z-index: 1;
+background-color: black;
+}
+
+#b{
+z-index: 2;
+background-color: #ffb1bd;
+}
+
+#c{
+z-index: 3;
+background-color: #009b3a;
+}
+
+#d{
+z-index: 4;
+background-color: #ffe000;
+}
+
+#e{
+z-index: 5;
+background-color: #abe8e9;
+}
+
+#f{
+z-index: 6;
+background-color: #d9d8d6;
+}
+
+#g{
+z-index: 7;
+background-color: #ffab52;
+}
+
+#h{
+z-index: 8;
+background-color: #f1f2f2;
+}
+
+#i{
+z-index: 9;
+background-color: #69c5ec;
+}
+
+#j{
+z-index: 10;
+background-color: black;
+}
+
+
+
+
+#sticky{
+position: sticky;
+top: 0px;
+}
+
+
+.collumn_sub{ 
+ float: left;
+ margin:2% 1% 2% 2%;
+/* background-color: red;*/
+}
+
+.collumn_bread{
+ float: left;
+ margin:2% 1% 2% 2%;
+/* background-color: red;*/
+}
+
+.image{
+float: left; 
+margin:2% 1% 2% 2%;
+/* background-color: red;*/
+}
+
+.footnote{
+  width: 50%;
+}
+
+.collumn_chapter{
+ text-align: center;
+ position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.collumn_chapter2{
+ text-align: center;
+ position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+}
+
+
+a {
+text-decoration: none;
+color: black;
+}
+
+
+
+
+
+
+a:hover {
+ color: black;
+}
+
+a.purple:hover {
+  color:purple;
+}
+
+
+
