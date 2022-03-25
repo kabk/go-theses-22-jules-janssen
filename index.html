@@ -1,151 +1,251 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jules Janssen</title>
-            <link rel="icon" href="favi/favicon.png" type="favi/x-icon"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favi/favicon.png" type="favi/x-icon"/>
-      <link rel="stylesheet" href="https://use.typekit.net/dqw5ppn.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-    </head>
+<html lang="en">
+ <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  
+<!-- meta tags, fill them with website meta infos -->
+<meta name="description" content="Description of your web page" /> 
+<meta name="keywords" content="Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5 ..."/> 
+<meta name="author" content="Name of the author/owner of the webpage's content" />
 
-<div id="container">
-     
+<!-- favicons -->
+<!--
+  very minimal use of favicon with a 512x512px .png favicon, 
+  use 'https://www.favicon-generator.org' to generate a more extensive favicon code 
+-->
+<link rel="icon" href="assets/images/favicon/favicon.png" sizes="32x32" />
+<link rel="icon" href="assets/images/favicon/favicon.png" sizes="192x192" />
+
+<!-- meta properties for social medias, twitter = twitter, og:... = facebook -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Webpage title">
+<meta name="twitter:description" content="Description of your web page">
+<meta property="twitter:image:src" content="assets/images/imageforsocialmedias.jpg">
+<meta property="og:title" content="Webpage title" />
+<meta property="og:url" content="http://www.mywebsite.com/mywebpage" />
+<meta property="og:description" content="Description of your webpage" />
+<meta property="og:image" content="assets/images/imageforsocialmedias.jpg" />
+
+<!-- website title, visible in the browser window and on link sharing -->
+<title>The Village People</title>
+
+<!-- links for extensions and dependencies -->
+
+<!-- css -->
+<!-- normalize 'resets' some browser properties to make them look the same across browsers -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- js -->
+<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="assets/js/functions.js?ver=1.0"></script>
+   
+
+<link rel="icon" href="images/favicon/favicon.png" sizes="150x150" />
+</head>
+
+<body>
+
+
+  <div class="page-wrapper">
+    <div id="index">
+      <img src="images/index_icon.svg" width="100%"></img>
+  </div>
+
+
+<!-- 
+  <nav>
+      <ul>
+        <li><a href="#introduction">Intro</a></li>
+        <li><a href="#chapter1">Chapter 1</a></li>
+        <li><a href="#chapter-2">Chapter 2</a></li>
+        <li><a href="#chapter-3">Chapter 3</a></li>
+        <li><a href="#epilogue">Epilogue</a></li>
+      </ul>
+  </nav> -->
+
+
     <div class="paragraph" id="introduction">
-        <div id="sticky">
-            <div class="collumn_chapter">
-            	<h>The Village People</h>
-        	</div>
+      <div class="sticky">
+        <div class="collumn_cover">
+          <h>
+            The Village People
+          </h>
+        </div>
     	</div>
     </div>
 
-	<div class="paragraph" id="author">
-      <div id="sticky">
+	 <div class="paragraph" id="author">
+      <div class="sticky">
           <div class="collumn_sub">
-    			<p>“Air Quoting”<br>(note on the author)</p>
+    			 <p>
+              “Air Quoting”<br>(note on the author)
+            </p>
     	   	</div>
    			  <div class="collumn_bread">
-    	   		<p> Words matter, and terms can be slippery. You may see this body of text between two big air quotes. It is written by a "normal" weight brain with two hands and ten fingers. It is visible, readable, and reviewable. It’s constructed inside. Yet, it is about the invisible edge that created the dichotomy in the first place. It’s about the ones that will never be able again. The human beings that cannot remigrate to the center, slowly falling off the bittersweet margins into eternal silence. Therefore, this exploration offers a petite peeking hole from inside. Like Plato, slipping into his own cave.<sup>1</sup></p> 
-    	   		<div class="footnote"><h2>1. See Plato’s The Republic Book VII, in which the Greek philosopher presents The Allegory of the Cave. It is his allegory, his cave, and his division. He may see what the prisoners cannot see, just as he cannot see what the prisoners may see.</h2></div>
-    	   </div>
-         <div class="image">
-          <img src="images/ik.png" width="60%"></img>
-           <div class="caption"><h2>
-			Fig 1. Selfie using FaceApp's Cool Old filter.</h2></div>
-         </div>
-    	</div>
-	</div>
+    	   		<p> 
+              Words matter, and terms can be slippery. You may see this body of text between two big air quotes. It is written by a "normal" weight brain with two hands and ten fingers. It is visible, readable, and reviewable. It’s constructed inside. Yet, it is about the invisible edge that created the dichotomy in the first place. It’s about the ones that will never be able again. The human beings that cannot remigrate to the center, slowly falling off the bittersweet margins into eternal silence. Therefore, this exploration offers a petite peeking hole from inside. Like Plato, slipping into his own cave.<sup>1</sup>
+            </p> 
+    	   		<div class="footnote">
+              <h2>
+                1. See Plato’s The Republic Book VII, in which the Greek philosopher presents The Allegory of the Cave. It is <i>his</i> allegory, <i>his</i> cave, and <i>his</i> division. He may experience what the prisoners cannot experience, just as he cannot experience what the prisoners may experience.
+              </h2>
+            </div>
+          </div>
+          <div class="collumn_image">
+            <img src="images/ik.png" width="60%"></img>
+            <div class="caption">
+              <h2>
+			           Fig 1. Selfie using FaceApp's <i>Cool Old</i> filter.
+              </h2>
+            </div>
+          </div>
+    	 </div>
+      </div>
 
 	<div class="paragraph" id="quote">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_chapter1">
-    	    	   		<h3 id="white">“Illness is the night-side of life, a more onerous citizenship” <br>(Sontag, 1978).</h> 
+    	    	   		<h3 id="white">“Illness is the night-side of life, a more onerous citizenship. Everyone who is born holds dual citizenship, in the kingdom of the well and in the kingdom of the sick” <br>(Sontag, 1978).</h> 
     	   	</div>
     	</div>
 	</div>
 
 
 	<div class="paragraph" id="a">
-        <div id="sticky">
+        <div class="sticky">
           <div class="collumn_sub">
     			<p>A<br>All Guns No Mask</p>
     	   	</div>
    			  <div class="collumn_bread">
-    	   		<p>The public health domain is a place we all share. In the light of our current situation, human interdependency is becoming more tangible. While this ecosystem of health revealed itself, national lockdowns and self-isolation policies were implemented as an act of care. Yet this also triggered a counter reaction of independency and individualism. In the same breath, populist leaders like Bolsonaro promoted gun possession while abandoning COVID-19 as an innocent flu.<sup>3</sup> Sudden manifestations of our fragile existence seem to ignite patriarchal enmity. Phenomena like Brexit and Trump shows isolationist tendencies on the global stage. But their campaigns also tap into a sentiment of individual self-containment and independency. The strong man can do it himself. These sentiments of neoliberal ableism may sound catchy to some, yet they automatically create division.<sup>4</sup></p> 
+    	   		<p>The public health domain is a place we all share. In the light of our current situation, human interdependency is becoming more tangible. While this ecosystem of health revealed itself, national lockdowns and self-isolation policies were implemented as an act of care. Yet this also triggered a counter reaction of independency and individualism. In the same breath, populist leaders like Bolsonaro promoted gun possession while abandoning COVID-19 as an innocent flu.<sup>3</sup> Sudden manifestations of our fragile existence seem to ignite patriarchal enmity. Phenomena like Brexit and Trump shows isolationist tendencies on the global stage. But their campaigns also tap into a sentiment of individual self-containment and independency. The strong man can do it himself. These sentiments of neoliberal ableism may sound catchy to some, yet they automatically create division.<sup>4</sup>
+            </p> 
+              <div class="footnote">
+              <h2>
+                1. See Plato’s The Republic Book VII, in which the Greek philosopher presents The Allegory of the Cave. It is <i>his</i> allegory, <i>his</i> cave, and <i>his</i> division. He may experience what the prisoners cannot experience, just as he cannot experience what the prisoners may experience.
+              </h2>
+            </div>
     	   </div>
-         <div class="image">
+         <div class="collumn_image">
           <img src="images/trump.png" width="80%"></img>
-          <div class="caption"><h2>
-			Fig 2. Cover image of <i>Crippled America: How to Make America Great Again, 2015.</i> The title of the book was inspired by the selected cover photograph. 
-			</h2></div>
+          <div class="caption">
+          <h2>
+	             Fig 2. Cover image of <i>Crippled America: How to Make America Great Again, 2015.</i> The title of the book was inspired by the selected cover photograph.
+          </h2>
+         </div>
          </div>
     	</div>
 	</div>
 
 	<div class="paragraph" id="b">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>B<br>Disability Justice</p>
     	   	</div>
    			<div class="collumn_bread">
     	   		<p>(Not) Surprisingly this doesn’t only stay in the medical domain. It’s treacherous how quickly the sentiment of medical ableism finds its way as a tool of othering. The disability justice framework as developed in 2005 by the Disability Justice Collective, examines ableism in relation to other forms of oppression and identity. It theorizes disability as a cultural, political, and social phenomenon, rather an individualized, medical matter attached to the body. It examines how ableism makes racism, Christian supremacy, sexism, and queer- and transphobia possible.<sup>5</sup> While these are just a few power mechanisms, all systems of oppression are intertwined.</p> 
     	   	</div>
-          <div class="image">
+          <div class="collumn_image">
           <img src="images/social.png" width="100%"></img>
+              <div class="caption">
+                <h2>
+                  Fig 3. © 2022 The Abolition and Disability Justice Coalition
+                </h2>
+            </div>
          </div>
     	</div>
 	</div>
 
 	<div class="paragraph" id="c">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>C<br>“Asylum”</p>
     	   	</div>
    			<div class="collumn_bread">
-    	   		<p>It is no coincidence that the word “asylum” refers to institutionalized places for both refugees, and people suffering from a mental disorder.<sup>6</sup> Both are poorly taken care of. Both are places far from home. Both enclose marginalized bodies. Analyzing society’s view on mental disability inevitably leads to insights concerning other labels of otherness. But perhaps their most profound similarity is their paradoxical relationship with accessibility. At the orthopedic clinic, accessibility is everything. Wheelchair ramps and elevators make sure patients can easily enter and move freely through the building. At the mental asylum, inaccessibility plays a dominant role. Often, it’s one way-in one-way out. It’s built to exclude, in order to protect “both sides" of the wall.</p> 
-    	   	</div>
-    	   	<div class="image">
-          	<img src="images/house.png" width="70%"></img>
+    	   	<p>
+              It is no coincidence that the word “asylum” refers to institutionalized places for both refugees, and people suffering from a mental disorder.<sup>6</sup> Both are poorly taken care of. Both are places far from home. Both enclose marginalized bodies. Analyzing society’s view on mental disability inevitably leads to insights concerning other labels of otherness. But perhaps their most profound similarity is their paradoxical relationship with accessibility. At the orthopedic clinic, accessibility is everything. Wheelchair ramps and elevators make sure patients can easily enter and move freely through the building. At the mental asylum, inaccessibility plays a dominant role. Often, it’s one way-in one-way out. It’s built to exclude, in order to protect “both sides" of the wall.
+            </p> 
+    	   </div>
+    	   	<div class="collumn_image">
+          	<img src="images/narrenschiff.png" width="100%"></img>
+                <div class="caption">
+            <h2>
+               Fig 4. Cover of <i>Der Narrenspiegel, das gros Narrenschiff</i> by Sebastian Brant, 1549.
+          </h2>
          	</div>
+       
+        </div>
+         </div>
     	</div>
 	</div>
 
 
 	<div class="paragraph" id="d">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>D<br>Deinstitutionalization</p>
     	   	</div>
    			<div class="collumn_bread">
     	   		<p>The mental asylum as we once knew it does not really exist anymore. As part of the world-wide deinstitutionalization process of the 20th century, the asylum made way for less isolated mental health services.<sup>7</sup> Key-figures like Franco Basaglia and Ervin Goffman pleated for a more existential approach, countering the ‘total institution’. Complete isolation and psychopathological treatments were slowly reformed into less “penetrating” health services and provided “more freedom” to patients. Stays where shortened and admission rates reduced. This didn’t mean that the psychiatric domain suddenly became a place for freedom and equality. With the discovery of psychiatric drugs, the architectural confinement could be substituted by medicinal prescriptions. The healthcare environment became more specialized and fragmented into different narrowed care facilities. Formats such as assisted living, therapy groups, halfway houses and inpatient clinics all originated from that time.</p> 
     	   	</div>
-    	   	<div class="image">
-          	<img src="images/gekkenkrant.png" width="100%"></img>
+    	   	<div class="collumn_image">
+          	<img src="images/gekkenkrant.png" width="80%"></img>
+              <div class="caption">
+              <h2>
+                 Fig 5. Cover of edition 1 of the<i> Gekkenkrant</i> (the Folly Newspaper). A Dutch newspaper for people in psychiatric institutions that published from 1973 to 1981.
+              </h2>
+            </div>
          	</div>
     	</div>
 	</div>
 
 	<div class="paragraph" id="e">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>E<br>Dutch Dementia </p>
     	   	</div>
    			<div class="collumn_bread">
     	   		<p>The current setting in which care is provided, differs drastically around the world. This thesis specifically explores the contemporary architectures encircling dementia care in The Netherlands. A country that is heavily capitalized, densely populated and has one of the most institutionalized elderly care systems in the world. In the Netherlands, about 115.000 people live in elderly homes.<sup>8</sup> Roughly half of this group is afflicted by dementia. There are currently about 290.000 people experiencing dementia in the Netherlands and it this number is likely to double by 2050 because of an increasing life expectancy.<sup>9</sup> </p> 
     	   	</div>
-    	   	<div class="image">
+    	   	<div class="collumn_image">
           	<img src="images/dutch.png" width="100%"></img>
+            <div class="caption">
+              <h2>
+                 Fig 6. <i>Het Meulenveld</i>, Almelo, The Netherlands.  © GGZ
+              </h2>
+            </div>
          	</div>
     	</div>
 	</div>
 
 	<div class="paragraph" id="f">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>F<br>Cut Off Dead End</p>
     	   	</div>
    			<div class="collumn_bread">
     	   		<p>Dementia is where the advancements in health science are confronted with a dead end. It’s a psychogeriatric condition that is not considered to be medically curable. For people with dementia this often means that the elderly home is their last resort. It requires palliative care, which means that the well-being is more important than the caregiving. This demands a huge responsibility from the care environment itself. With an already urgent shortage in caregivers and a market full of cuts, the setting surrounding people experiencing dementia is the absolute bearer of their well-being. </p> 
     	   	</div>
-    	   	<div class="image">
+    	   	<div class="collumn_image">
           	<img src="images/dead.png" width="100%"></img>
+            <div class="caption">
+              <h2>
+                 Fig 7. MRI scan of a brain affected by vascular dementia. © Radiologykey
+              </h2>
+            </div>
          	</div>
     	</div>
 	</div>
 
 	<div class="paragraph" id="g">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>G<br>White Wash</p>
     	   	</div>
    			<div class="collumn_bread">
     	   		<p>The results are countless tayloristic rituals, captured in Excel sheets, about the right amount of light, the ideal television volume, and the average length of walks through the courtyard. But these institutional settings don’t just provide daily routine. Design interventions offer a lighting consolation for an architectural reality in which the walls are closing in. They effectively tap into a brain condition in which reality is wavering already. If we can’t be God, we can at least simulate God: murals, decors, music, and innovative simulators tend to bring residents back to the brighter days of tactile autonomy. The credibility of these escapist mediation moments depends on the pockets of the patient. This essay provides an exploration of these moments in a country that has little room for the ill. </p> 
     	   	</div>
-    	   	<div class="image">
+    	   	<div class="collumn_image">
           		<img src="images/droger.png" width="100%"></img>
           		<div class="caption">
 					<h2>Fig 7. <i>Alzheimer Travel Experience</i>–Yvonne Dröge Wendel and Lino Helling (2008).</h2>
@@ -155,8 +255,11 @@
 	</div>
 
 
+
+
+
   	<div class="paragraph" id="chapter1">
-        <div id="sticky">
+        <div class="sticky">
             <div class="collumn_chapter1">
             	<h>Chapter 1:<br>(Cyto)Architecture</h>
         	</div>
@@ -164,16 +267,15 @@
     </div>
 
 	<div class="paragraph" id="h">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>H<br>Oma 'Klein Ding'</p>
     	   	</div>
    			<div class="collumn_bread">
-    	   		<p>My grandma called me Wouter instead of Jules and offered me a biscuit each ten minutes. Every two weeks on a Sunday we would drive from Eindhoven to the nursing home in Bergen. We always stayed for two hours. I used to draw armless people in her room after which she would ask if I was left-handed. “Wouter is left-handed, isn’t he?” “Wouter is left-handed, isn’t he?” She passed away in October 2010. We never visited the nursing home in which she lived again. 
-				<br>Thinking about it now, makes me remember how I used to run laps through the unit. It felt like an infinite corridor, like an endless world. The building was circular, had vinyl floors and semi-automatic push bar doors. In the middle was a little park with an artificial lake. All residents of the unit suffered from dementia.
+    	   		<p>My grandma called me Wouter instead of Jules and offered me a biscuit each ten minutes. Every two weeks on a Sunday we would drive from Eindhoven to the nursing home in Bergen. We always stayed for two hours. I used to draw armless people in her room after which she would ask if I was left-handed. “Wouter is left-handed, isn’t he?” “Wouter is left-handed, isn’t he?” She passed away in October 2010. We never visited the nursing home in which she lived again. Thinking about it now, makes me remember how I used to run laps through the unit. It felt like an infinite corridor, like an endless world. The building was circular, had vinyl floors and semi-automatic push bar doors. In the middle was a little park with an artificial lake. All residents of the unit suffered from dementia.
 				</p> 
     	   	</div>
-    	   	<div class="image">
+    	   	<div class="collumn_image">
           		<img src="images/oma.png" width="100%"></img>
           		<div class="caption">
 					<h2>Fig 8. Front façade of the dementia unit <i>Maasduinen Staete</i> in which my grandmother spent her last two years.</h2>
@@ -183,7 +285,7 @@
 	</div>
 
 	<div class="paragraph" id="i">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>I<br>The Island</p>
     	   	</div>
@@ -191,7 +293,7 @@
     	   		<p>Isolation derives from the Latin word “isola”, meaning island. The closed character of the memory care institution seems to be born out of modern necessity. The cortex of the human brain is humanly divided in different islands that all have different functions: forming memories, processing sound, speech production, all that jazz.<sup>2</sup> The logic of everyday rationale is often based on similar mappings. The way in which your home is ordered, how city districts are divided and how food is categorized in supermarkets. It’s exactly in these architectural settings that things start to get lost. In the care environment art can be used as a landmark tool to improve wayfinding for its residents.  
 				</p> 
     	   	</div>
-    	   	<div class="image">
+    	   	<div class="collumn_image">
           		<img src="images/archipel.png" width="100%"></img>
           		<div class="caption">
 					<h2>Fig 9. A room of <i>Zorggroep Archipel</i>, Almere, Netherlands. </h2>
@@ -201,14 +303,14 @@
 	</div>
 
 	<div class="paragraph" id="j">
-        <div id="sticky">
+        <div class="sticky">
            	<div class="collumn_sub">
     			<p>J<br>Little Room (Room)</p>
     	   	</div>
    			<div class="collumn_bread">
     	   		<p>Cell derives from the Latin word “cellula”, meaning “small room”.<sup>3</sup> The dementia care environment may serve as a direct analogy between the brain and the building. A healthy brain probably weighs about 1300 to 1400 kilograms. When you are in the process of depersonalizing, the environment surrounding you seems to do the same. In an Alzheimer brain plagues and tangles block the cell transport system resulting in a dysfunctional cell transport system. Nutrients and other essential supplies can no longer move through the cells. Neurons die throughout the brain, connections between networks of neurons break down and cells die.<sup>6</sup> In the last stage of Alzheimer, a brain weights 1100 – 1200 grams.1 Daily life becomes difficult, especially in countries with a lot of roads. Trapped in the boundaries of protocol, only a tiny fragment of personal belongings makes it into the dementia unit.   </p> 
     	   	</div>
-    	   	<div class="image">
+    	   	<div class="collumn_image">
           		<img src="images/cytoarchitecture.png" width="100%"></img>
           		<div class="caption">
 					<h2>Scan of p 288 of the book <i>Anatomy of the Nervous System</i>, by Stephen Walter Ranson, W. B. Saunders, 1920. From Wikimedia Commons.</h2>
