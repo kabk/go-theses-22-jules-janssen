@@ -1,0 +1,652 @@
+@charset "UTF-8";
+
+html {
+  height: 100%;
+  margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+  height:100%;
+    margin: 0;
+}
+
+li {
+      list-style-type: none;
+}
+
+
+nav{
+  
+}
+
+
+
+
+div.page-wrapper {
+}
+
+#menu {
+    right: 0;
+width: 0px;
+height: 100%;
+position: fixed;
+z-index: 1000;
+background-color: #999999;
+position: fixed;
+   transition:             width 500ms ease;
+        -moz-transition:    width 500ms ease;
+        -ms-transition:     width 500ms ease;
+        -o-transition:      width 500ms ease;
+        -webkit-transition: width 500ms ease;
+}
+
+@media only screen and (max-width: 600px) {
+  #menu {  width: 100%; height: 65%;}
+}
+
+.sticky{
+position: sticky;
+top: 0px;
+height: 120vh;
+}
+
+.paragraph {
+padding: 1em;
+display: flex;
+  justify-content: center;
+row-gap: 20px;
+column-gap: 30px;
+flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .paragraph {  flex-wrap: wrap; justify-content: flex-start;}
+}
+
+
+img{
+  width:100%;
+  height:auto;
+  max-height:33vw;
+/*  background-color: #F00;*/
+  object-fit: contain;
+  object-position: top left;
+}
+
+
+@media only screen and (max-width: 600px) {
+  img {    max-height:100vw;}
+}
+
+.sub_column{
+flex-grow: 1;
+ flex: 0 0 10em;
+  justify-content: center;
+/*background-color: red;*/
+}
+
+.bread_column{
+flex-grow: 2;
+ flex: 0 0 25em;
+  justify-content: center;
+/*background-color: red;*/
+}
+
+
+.quote_column{
+/*   flex: 0 0 50em;*/
+  justify-content: center;
+text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .bread_column {   flex: 17.5em;}
+}
+
+.image_column{
+align-items: center;
+align-self: center;
+margin: 0em -0.35em 0em -0.35em;
+flex-grow: 1;  
+justify-content: center;
+/*background-color: red;*/
+}
+
+.title_column{
+ text-align: center;
+ position: fixed;
+top: 50%;
+left: 48%;
+-webkit-transform: translate(-50%, -47%);
+transform: translate(-50%, -47%);
+}
+
+.chapter_column{
+position: relative;
+text-align: center;
+/*top: 50%;
+left: 50%;
+-webkit-transform: translate(-53%, -15%);
+transform: translate(-53%, -15%);*/
+}
+
+
+
+
+header {
+  text-align: center;
+  background-color: black;
+}
+
+
+.footnote{
+  margin-top: 2em;
+  width: 75%;
+}
+
+.caption{
+  margin-left: 0.5em;
+}
+
+#chapter_01 {
+background-color: green;
+display: flex;
+}
+
+/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
+
+@font-face {
+    font-family: 'Fraunces72';
+    src: url('../fonts/fraunces/Fraunces72ptSuperSoft-Regular.otf'),
+         url('../fonts/yourfontname/yourfontname-roman.woff'),
+         url('../fonts/yourfontname/yourfontname-roman.eot'),
+         url('../fonts/yourfontname/yourfontname-roman.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yourfontname/yourfontname-roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Fraunces9';
+    src: url('../fonts/fraunces/Fraunces9ptSuperSoft-Regular.otf'),
+         url('../fonts/yourfontname/yourfontname-italic.woff'),
+         url('../fonts/yourfontname/yourfontname-italic.eot'),
+         url('../fonts/yourfontname/yourfontname-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yourfontname/yourfontname-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Pimpit';
+    src: url('../fonts/pimpit/Pimpit-trial-variable.ttf') format("truetype-variations");
+/*    font-pump: 100 700;*/
+    font-style: normal;
+    font-display: block;
+}
+
+
+
+
+/* VARIABLES */
+
+:root {
+  /* Color settings */
+  --color-background: rgba(255,255,255,1);
+  --color-text: rgba(0,0,0,1);
+  --color-text-link: rgba(0,0,255,0.8);
+  --color-text-link-hover: rgba(0,0,255,0.4);
+  /* Font settings */
+  --font-family: 'Your Font Name', 'Helvetica', 'Arial', sans-serif;
+  --font-size: 24px;
+  /* Margins settings */
+  --margin: 1rem;
+}
+
+
+
+/* GENERAL STYLES */
+
+
+
+
+a {
+  text-decoration: none;
+    color: black;
+  }
+
+a:hover {
+  text-decoration: none;
+    color: #d1d1d1;
+  }
+}
+
+
+a:focus-visible {
+  text-decoration: none;
+    color: #d1d1d1;
+  }
+
+
+h1{
+font-family: Pimpit;
+font-weight: 500;
+font-style: normal;
+font-size: 12em;
+line-height: 0.9;
+color: white;
+letter-spacing: -0.015em;
+margin: 10px;
+/*font-variation-settings: "PUMP" 700;*/
+}
+
+h2{
+
+font-family: Pimpit;
+font-weight: 500;
+font-style: normal;
+font-size: 5.5em;
+line-height: 0.9;
+color: black;
+letter-spacing: -2px;
+margin: 0;
+}
+
+
+
+
+h3{
+margin-top:0;
+font-family: Fraunces9;
+font-weight: 500;
+font-style: normal;
+font-size: 0.5em;
+line-height: 1.2;
+}
+
+@media only screen and (max-width: 600px) {
+  h3 { font-size: 9pt;}
+}
+
+
+sup {
+  font-size: 0.5em;
+}
+
+h4 {
+margin: 0;
+font-family: Fraunces72;
+font-weight: 500;
+font-style: normal;
+font-size: 2em;
+line-height: 1.1;
+text-align: center;
+}
+
+p{
+margin: 0;
+font-family: Fraunces72;
+font-weight: 500;
+font-style: normal;
+font-size: 1em;
+line-height: 1.1;
+}
+
+.white{
+  color: white;
+}
+
+#index{
+  margin:2%;
+  left: 94%;
+    text-align: right;
+  float: right;
+  position: fixed;
+  z-index: 100000;
+    transition: transform .1s ease-in-out;
+
+}
+
+#index:hover {
+  transform: rotate(-90deg);
+}
+
+
+#cover{
+z-index: 1;
+background-color: black;
+}
+
+#author{
+z-index: 2;
+background-color: #ffb1bd;
+}
+
+#quote_sontag{
+z-index: 3;
+background-color: black;
+}
+
+
+#a{
+z-index: 3;
+background-color: #009b3a;
+}
+
+#b{
+z-index: 4;
+background-color: #ffe000;
+}
+
+#c{
+z-index: 5;
+background-color: #abe8e9;
+}
+
+#d{
+z-index: 6;
+background-color: #d9d8d6;
+}
+
+#g{
+z-index: 7;
+background-color: #ffab52;
+}
+
+#e{
+z-index: 8;
+background-color: #ff7332;
+}
+
+#f{
+z-index: 9;
+background-color: #69c5ec;
+}
+
+#g{
+z-index: 10;
+background-color: #f1f2f2;
+}
+
+#sources_intro{
+z-index: 10;
+background-color: white;
+}
+
+
+#chapter-1{
+z-index: 11;
+background-color: black;
+}
+
+#h{
+z-index: 12;
+background-color: #fbf49a;
+}
+
+#i{
+z-index: 13;
+background-color: #0081c3;
+}
+
+#j{
+z-index: 14;
+background-color: #d5a9a0;
+}
+
+#k{
+z-index: 15;
+background-color: #fbf49a;
+}
+
+#l{
+z-index: 16;
+background-color: #22a571;
+}
+
+#m{
+z-index: 17;
+background-color: #8ee7d4;
+}
+
+#n{
+z-index: 18;
+background-color: #f6e70f;
+}
+
+#o{
+z-index: 19;
+background-color: #e6cab3;
+}
+
+#p{
+z-index: 20;
+background-color: #fbf49a;
+}
+
+#q{
+z-index: 21;
+background-color: #9b9ca0;
+}
+
+#sources_chapter-1{
+z-index: 22;
+background-color: white;
+}
+
+#chapter-2{
+z-index: 23;
+background-color: black;
+}
+
+#r{
+z-index: 24;
+background-color: #8ee5b4;
+}
+
+#s{
+z-index: 25;
+background-color: #93b4e4;
+}
+
+#quote_borger{
+z-index: 25;
+background-color: black;
+}
+
+#t{
+z-index: 26;
+background-color: #4f7ffc;
+}
+
+#u{
+z-index: 27;
+background-color: #9b9ca0;
+}
+
+#v{
+z-index: 28;
+background-color: #9b9ca0;
+}
+
+#w{
+z-index: 29;
+background-color: #9b9ca0;
+}
+#x{
+z-index: 30;
+background-color: #9b9ca0;
+}
+
+#y{
+z-index: 31;
+background-color: #9b9ca0;
+}
+
+#z{
+z-index: 32;
+background-color: #9b9ca0;
+}
+
+
+
+
+
+} paragraph style */
+}
+
+ol, ul{
+text-decoration: none;
+margin:0;
+}
+
+blockquote{
+  /* blockquote element style */
+}
+
+hr{
+  /* horizontal rule style */
+}
+
+
+
+/* PAGE STYLES */
+
+/* page structure */
+
+
+
+/* navigation */
+ 
+
+
+/* content */
+
+main{
+ 
+}
+
+
+
+
+/* GENERAL USABILITY */
+
+/* hide desktop mobile etc */
+
+.desktop {
+/*  display: block;*/
+}
+
+.mobile {
+  display: none;
+}
+
+/* if you want to hide something visually but want to keep it readable / accessible for screen readers (sr) */
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* responsive typeface */
+
+@media (max-width: 298px) { 
+  :root{ --font-size: 15px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 299px) and (max-width: 339px) { 
+  :root{ --font-size: 16px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 340px) and (max-width: 439px) { 
+  :root{ --font-size: 17px; } html, body {font: var(--font-size) var(--font-family);} 
+}
+@media (min-width: 440px) and (max-width: 599px) { 
+  :root{ --font-size: 18px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 600px) and (max-width: 779px) { 
+  :root{ --font-size: 19px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 780px) and (max-width: 992px) { 
+  :root{ --font-size: 20px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 993px) and (max-width: 1200px) { 
+  :root{ --font-size: 22px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1201px) and (max-width: 1319px) { 
+  :root{ --font-size: 24px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1320px) and (max-width: 1619px) { 
+  :root{ --font-size: 26px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1620px) and (max-width: 1879px) { 
+  :root{ --font-size: 28px; } html, body {font: var(--font-size) var(--font-family);}
+}
+@media (min-width: 1880px) { 
+  :root{ --font-size: 30px; } html, body {font: var(--font-size) var(--font-family);}
+}
+
+
+
+/* website media queries */
+
+@media (max-width: 779px) {
+
+  /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
+  /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
+
+
+
+
+
+
+  /* utilities */
+
+  .desktop{display:none!important;}
+  .mobile{display:block;}
+
+}
+
+
+
+@media (max-width: 339px) {
+
+  /* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
+
+}
+
+
+
+@media (max-width: 779px) and (orientation: landscape) {
+
+  /* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
+
+}
+
+
+
+@media (min-width: 780px) and (max-width: 992px) {
+
+  /* use this query to apply style for 'small' desktop screens */
+
+}
+
+
