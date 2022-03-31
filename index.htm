@@ -47,13 +47,14 @@
 
 
 
-
-
 			<nav id="menu">
 				
-		 <div id="index">
-		 	<img src="content/images/index_icon.png" width="100%"></img>
+	 <div id="index">
+		 	<img src="content/images/index_icon.svg" width="100%"></img>
 		 </div>
+
+
+
 				<ul>
 					<li><h2><a href="#cover">Intro</a></h2></li>
 					<li><h2><a href="#chapter-1">Chapter 1</a></h2></li>
@@ -70,15 +71,20 @@
 
 
 
-		<header>
-			<div class="sticky" id="cover">
+			<div class="sticky2" id="cover">
 				<div class="title_column">
 			<h1>The Village People</h1>
-	<!-- 		<p class="white">A thesis by Jules Janssen<br>Royal Academy of Arts, The Hague, 2022</p> -->
+<!-- 									<p class="white">A thesis by Jules Janssen<br>Royal Academy of Arts, The Hague, 2022</p> -->
 			</div>
 			</div>
-		</header>
 
+	<div class="sticky" id="cover_image">
+				<div class="paragraph">
+					<div class="chapter_column">
+									<img src="content/images/droger.png" width="100%"></img>
+					</div>
+				</div>
+			</div>
 
 
 		<main>
@@ -388,10 +394,11 @@
 			<div class="sticky" id="chapter-1">
 				<div class="paragraph">
 					<div class="chapter_column">
-						<h1 id="beneath">  
-							Chapter 1
-							<br>
-							(Cyto) Architecture
+						<h1> 
+							1
+							<br> 
+							Cyto
+							Architecture
 						</h1>
 					</div>
 				</div>
@@ -709,8 +716,8 @@
 		<div class="sticky" id="chapter-2">
 			<div class="paragraph">
 				<div class="chapter_column">
-					<h1 id="beneath">  
-						Chapter 2
+					<h1>  
+						2
 						<br>
 						Embodiment
 					</h1>
@@ -835,17 +842,56 @@
 	</div>
 
 
-<script type="text/javascript">
+<script>
+var w = document.documentElement.clientWidth || window.innerWidth;
+// mobile
+if (w <= 600) {
 	document.getElementById( 'menu' ).addEventListener( 'click', function() {
 
     this.style.width == '0px' || this.style.width == ''
-        ? this.style.width = '20em' 
+        ? this.style.width = '100%' 
         : this.style.width = '0px';
 
 }, false );
 
-	
+// computer
+} else {
+	document.getElementById( 'menu' ).addEventListener( 'click', function() {
+
+    this.style.width == '0px' || this.style.width == ''
+        ? this.style.width = '100%' 
+        : this.style.width = '0px';
+
+}, false );
+
+}
 </script>
+
+
+<!-- <script>
+	$(document).ready(function() {
+
+
+  var degrees = 0;
+  $('#index').click(function rotateMe(e) {
+
+    degrees += 90;
+
+    //$('.img').addClass('rotated'); // for one time rotation
+
+    $('#index').css({
+
+      'transform': 'rotate(' + degrees + 'deg)',
+      '-ms-transform': 'rotate(' + degrees + 'deg)',
+      '-moz-transform': 'rotate(' + degrees + 'deg)',
+      '-webkit-transform': 'rotate(' + degrees + 'deg)',
+      '-o-transform': 'rotate(' + degrees + 'deg)'
+    });
+
+  })
+
+});
+</script> -->
 
 </body>
 
