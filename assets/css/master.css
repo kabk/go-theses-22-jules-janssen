@@ -10,6 +10,10 @@ html {
     -o-animation: fadein 0.5s; /* Opera */
 }
 
+
+
+
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -48,6 +52,20 @@ body {
     margin: 0;
 }
 
+
+#myVideo{
+width: 100%;
+  object-fit: cover;
+margin:0;
+z-index: -1;
+}
+
+@media only screen and (max-width: 1000px) {
+  #myVideo {  display: none;}
+}
+
+
+
 .container {
   text-align: center;
   height: 3500px;
@@ -73,9 +91,9 @@ nav{
 
 
 
-
 div.page-wrapper {
 }
+
 
 #menu {
   cursor: pointer;
@@ -215,18 +233,6 @@ justify-content: center;
 /*background-color: red;*/
 }
 
-.title_column{
-  position: fixed;
-/*  left:8%;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  align-self: center;
-  height: 100vh;
-  width: 100vw;
-}
-
 .chapter_column{
   display: flex;
   justify-content: center;
@@ -238,7 +244,7 @@ justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
-  .chapter_column{    height: 50vh;}
+  .chapter_column{    height: 50vh;   margin-top: 0.5em;}
 }
 
 
@@ -264,12 +270,27 @@ display: flex;
 }
 
 #name{
-  position: absolute;
-top:5%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-z-index: 10000000;
+     display:inline-block;
+     margin-top:0.5em;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
 text-align: center;
+z-index: 100;
+}
+
+#title_text{
+  position: fixed;
+/*  left:8%;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* @FONT FACE (enable the use of 'custom fonts' inside your document) */
@@ -351,7 +372,7 @@ a:focus-visible {
 
 h1{
 font-family: Pimpit;
-font-weight: 500;
+font-weight: 200;
 font-style: normal;
 font-size: 12em;
 line-height: 0.9;
@@ -359,12 +380,36 @@ color: white;
 letter-spacing: -0.015em;
 margin: 0;
 text-align: center;
+font-variation-settings: "Pmpt" 100;
+animation: breathe 4000ms infinite forwards;
+}
+
+@keyframes breathe {
+  60% {
+    font-variation-settings: 'Pmpt' 200;
+  }
+
+  100% {
+    font-variation-settings: 'Pmpt' 100;
+  }
 }
 
 
 @media only screen and (max-width: 600px) {
-  h1 {  font-size: 8em;}
+  h1 {   font-size:8em;}
+
+@keyframes breathe {
+  60% {
+    font-variation-settings: 'Pmpt' 150;
+  }
+
+  100% {
+    font-variation-settings: 'Pmpt' 100;
+  }
 }
+
+}
+
 
 
 h2{
@@ -378,7 +423,6 @@ color: black;
 letter-spacing: -2px;
 margin: 0;
 }
-
 
 
 
@@ -497,13 +541,33 @@ footer{
 
 
 #cover{
-z-index: 1;
+
+z-index: -1;
 background-color: black;
+/*background-image: url("island_2.png");*/
 }
 
-#cover_image{
-z-index: 1;
+
+.title_column{
+position: absolute;
+/*  left:8%;*/
+/*  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;*/
+/*  height: 100vh;
+  width: 100vw;*/
+margin-left: auto;
+margin-right: auto;
+top:25%;
+left: 0;
+right: 0;
+text-align: center;
+z-index: 100000;
 }
+
+
 
 #author{
 z-index: 2;
@@ -518,6 +582,9 @@ background-color: black;
 
 #a{
 z-index: 3;
+ background-image: ("content/images/droger.png"); 
+    background-repeat:no-repeat;
+   background-size:contain;
 background-color: #e9e3b6;
 }
 
@@ -554,6 +621,11 @@ background-color: #efd8c4;
 #g{
 z-index: 10;
 background-color: #f1f2f2;
+}
+
+#covertitio{
+  z-index: 3;
+  background-color: rgba(255, 0, 0, 0.4);
 }
 
 #sources_intro{
